@@ -16,4 +16,4 @@ To run on server type:
 
 In browser, type url:  http://localhost:8080
 
-If everything went file, You will see "Hello World"  on Screen.
+If everything went fine, You will see "Hello World"  on Screen.
