@@ -1,24 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { Router, Route, browserHistory } from "react-router";
 
-class MyComponent extends React.Component {
-  render () {
-    return (
-      <h1>Hello World!</h1>
-    );
-  }
-}
+import TodoApp from './components/TodoApp';
+import store from './store';
 
-ReactDOM.render(<MyComponent />, document.getElementById('app'));
-
-//
-// class MyComponent extends React.Component {
-//   render () {
-//     return React.createElement('h1', null, 'Hello World');
-//   }
-// }
-//
-// ReactDOM.render(
-//   React.createElement(MyComponent, null),
-//   document.getElementById('app')
-// );
+ReactDOM.render((
+  <div>
+    <Provider store={store} >
+        <Router  history={browserHistory} >
+          <Route path='/' component={TodoApp} />
+        </Router>
+    </Provider>
+  </div>
+), document.getElementById('app'));

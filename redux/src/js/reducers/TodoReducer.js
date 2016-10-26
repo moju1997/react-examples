@@ -1,4 +1,6 @@
-var initailState = {
+import * as c from '../constants/TodoConstants';
+
+var initialState = {
   todos: [
     {
       id: 876876978,
@@ -12,10 +14,13 @@ var initailState = {
 };
 
 export default function todoReducer(state = initialState, action) {
+  var tmp = state.todos;
 
-  swith ( action.type ){
-    case TODO_CREATE: {
-
+  switch ( action.type ){
+    case c.TODO_CREATE: {
+      console.log('check 4');
+      tmp.push(action.payload);
+      state = Object.assign({}, state, { todos: tmp});
       break;
     }
   }
