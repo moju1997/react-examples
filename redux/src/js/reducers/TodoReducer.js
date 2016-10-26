@@ -18,7 +18,6 @@ export default function todoReducer(state = initialState, action) {
 
   switch ( action.type ){
     case c.TODO_CREATE: {
-      console.log('check 4');
       tmp.push(action.payload);
       state = Object.assign({}, state, { todos: tmp});
       break;
