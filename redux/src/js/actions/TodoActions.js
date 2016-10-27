@@ -8,7 +8,5 @@ export function createTodo (text) {
     text
   };
   return { type: c.TODO_CREATE, payload: data};
-
-
-  //Asynchronous calls can be made here
+  
 }
