@@ -15,8 +15,10 @@ If everything went fine, You will see "Hello World"  on Screen.
 
 //////////////////////////////////////////////////////////////////////////
 
-**React JS**
+**React JS Development Environment Setup**
+
 Important:
+
 1. We will be writing all our React JS code in ES6
 2. We will break our entire application codes into multiple modules.
 
@@ -30,4 +32,9 @@ You refer [this](https://medium.com/@dabit3/beginner-s-guide-to-webpack-b1f1a363
 Minimum config requirement for webpack is two fileds: `entry` and `output`. In entry we provide the main javascript file which will be used for bundling. output is used to define the path and filename of output file that will be generated using entry.
 
 If we define only these two config, then it will simply bundle `entry` file and generate output file. It will not transpile ES6 to ES3.
-For transpiling we need to define loader (babel here), which is defined in third config `module.loaders.loader`  
+For transpiling we need to define loader (babel here), which is defined in third config `module.loaders`
+
+Now we are good to go with React JS Helloworld code.
+
+You can consider watching [these](https://www.youtube.com/watch?v=MhkGQAoc7bc&list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b) youtube videos for understanding React.
+You refer to [React api docs](https://facebook.github.io/react/docs/react-api.html) for more details.
